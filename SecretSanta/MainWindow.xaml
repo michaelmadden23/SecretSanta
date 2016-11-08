@@ -1,0 +1,18 @@
+﻿<Window x:Class="SecretSanta.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Secret Santa Generator" Height="350" Width="700" Background="WhiteSmoke" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="25" VerticalAlignment="Top" Margin="10">
+            <Label>Number of Secret Santas: </Label>
+            <TextBox Name="UINumberPeople" Width="50" Height="20" MaxLength="2"></TextBox>
+        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Width="500" Height="200">
+            <Border Background="Red" CornerRadius="10">
+                <StackPanel Name="AllContacts" HorizontalAlignment="Center" Width="500" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
+        <Button Name="UIGenerate" Height="25" VerticalAlignment="Bottom">Generate</Button>
+    </Grid>
+</Window>
